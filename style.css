@@ -1,0 +1,159 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+}
+
+.box_start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 200px;
+}
+.box_start p {
+    color: rgb(202, 202, 202);
+    text-shadow: 1px 1px 7px black;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.box_start .text_nick {
+    width: 300px;
+    height: 30px;
+    background-color: rgba(63, 49, 255, 0.329);
+    text-align: center;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 20px;
+    border: 1px solid black;
+}
+.box_start .text_nick::placeholder{
+    color: rgba(0, 0, 0, 0.329) ;
+    font-size: 18px;
+}
+.box_start button {
+    background-color: rgb(55, 43, 226);
+    width: 130px;
+    height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 50px;
+    font-size: 20px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.box_start button:hover, .box_start .text_nick:hover, .box_start .text_nick:focus{
+    background-color: rgb(62, 49, 255);
+    box-shadow: 0px 5px 20px rgba(63, 49, 255, 0.712);
+}
+
+/* Header */
+header {
+    width: 100%;
+    height: 75px;
+    background-color: #111;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+}
+.header_box {
+    width: 1300px;
+    height: 75px;
+    background-color: #111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_left {
+    display: flex;
+    align-items: center;
+}
+.icon_box {
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #777;
+    border-radius: 50%;
+    box-shadow: -1px 0px 10px rgba(0, 0, 0, 0.692);
+    cursor: pointer;
+    background-image: url(images/perfil.png);
+    background-size: contain;
+}
+.nick_name {
+    margin-left: 30px;
+    font-size: 18px;
+    color: #AAA;
+    text-shadow: -2px 0px 10px black;
+}
+.header_center {
+    width: 600px;
+    height: 75px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header_center span{
+    margin-top: 10px;
+    color: #AAA;
+    font-size: 40px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.header_center span:hover {
+    border-bottom: 2px solid white;
+    color: white;
+    margin-bottom: 7px;
+}
+
+
+
+.money_box {
+    min-width: 150px;
+    height: 30px;
+    background-color: rgb(32, 32, 32);
+    border-radius: 10px;
+    border: 3px solid rgb(32, 32, 32);
+    box-shadow: 0px 0px 3px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.money_box span .ion-icon {
+    margin-top: 5px;
+    color: rgba(0, 136, 0, 0.473);
+    text-shadow: 1px 1px 10px black;
+}
+.header_right{
+    color: green;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.header_right p {
+    margin-right: 10px;
+    text-shadow: 1px 1px 10px black;
+}
+.money_box .money {
+    color: green;
+    font-size: 25px;
+    margin: 15px;
+    text-shadow: 3px 3px 15px black;
+}
+
+/* Table Game */
+
+.section_table {
+
+}
