@@ -218,7 +218,7 @@ header {
 
 
 .section_loan_display{
-    display:flex;
+    display:none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -322,4 +322,24 @@ header {
 .section_loan_display_load .button:hover {
     background-color: rgb(62, 49, 255);
     box-shadow: 0px 5px 20px rgba(63, 49, 255, 0.712);
+}
+
+/* TESTE */
+.section_withdraw_display {
+    width: inherit;
+    height: inherit;
+    background-color: red;
+    display: flex;
+}
+.section_deposit_display {
+    width: inherit;
+    height: inherit;
+    background-color: blue;
+    display: none;
+}
+.section_history_display {
+    width: inherit;
+    height: inherit;
+    background-color: yellow;
+    display: none;
 }
