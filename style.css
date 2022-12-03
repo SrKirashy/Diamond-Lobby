@@ -195,7 +195,7 @@ header {
 .active{
     background-color: rgb(21, 26, 66);
 }
-.section_withdraw:hover, .section_deposit:hover, .section_loan:hover, .section_history:hover {
+.section_withdraw:hover, .section_deposit:hover,.section_loan:hover,.section_history:hover {
     background-color: rgb(21, 26, 66);
 }
 .menu_bank span {

@@ -11,10 +11,10 @@ document.querySelector('.buttonInitial').addEventListener('click', (e) => {
 })
 
 // MENU BANK ----------------->  MENU BANK -----------------> MENU BANK ----------------->
-document.querySelector('.menu_bank').addEventListener('click', (e) => {
-    clickMenuBank(e);
-    console.log(e.target);
-})
+document.querySelector('.section_withdraw').addEventListener('click', e => clickMenuBank(e));
+document.querySelector('.section_deposit').addEventListener('click', e => clickMenuBank(e));
+document.querySelector('.section_loan').addEventListener('click', e => clickMenuBank(e));
+document.querySelector('.section_history').addEventListener('click', e => clickMenuBank(e));
 
 //LOAN -----------------> LOAN -----------------> LOAN ----------------->
 document.querySelector('.section_loan_display button').addEventListener('click', (e)=>{
@@ -48,57 +48,23 @@ function initiatingData(){
 
 
 function clickMenuBank(e) {
-    let event = e.target.getAttribute('class');
-    let eventActive = e.target.classList.contains('active');
-    
+    let event = e.currentTarget.getAttribute('class');
+    let eventActive = e.currentTarget.classList.contains('active');
+
     if (eventActive !== true) {
+        inative = document.querySelector('.active').getAttribute('class');
+        length = inative.length -7 ;
+        
+        inativeClass = inative.slice(0,length);
         document.querySelector('.active').classList.remove('active');
         document.querySelector('.' + event).classList.add('active');
+        document.querySelector('.'+event+'_display').style.display = 'flex';
+        document.querySelector('.'+inativeClass+'_display').style.display = 'none';
+
+    
     } else {
 
     }
-    switch (event) {
-        case 'section_withdraw':
-            for (let i; i >= 4; i++){
-                document.querySelector(`#id="${i}_D"`).style.display = 'none';
-                console.log(`#id="${i}_D"`);
-            }
-
-            document.querySelector('.section_withdraw_display').style.display = 'flex';
-            console.log('1');
-            break;
-        
-        case 'section_deposit':
-            for (let i; i >= 4; i++){
-                document.querySelector(`#id="${i}_D"`).style.display = 'none';
-                console.log(`#id="${i}_D"`);
-            }
-
-            document.querySelector('.section_deposit_display').style.display = 'flex';
-            console.log('2');
-            break;
-        case 'section_loan':
-            for (let i; i >= 4; i++){
-                document.querySelector(`#id="${i}_D"`).style.display = 'none';
-                console.log(`#id="${i}_D"`);
-            }
-
-            document.querySelector('.section_loan_display').style.display = 'flex';
-            console.log('3');
-            break;
-        case 'section_history':
-            for (let i; i >= 4; i++){
-                document.querySelector(`#id="${i}_D"`).style.display = 'none';
-                console.log(`#id="${i}_D"`);
-            }
-            
-            document.querySelector('.section_history_display').style.display = 'flex';
-            console.log('4');
-            break;
-        default: ;
-    }
-
-
 }
 
 
