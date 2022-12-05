@@ -9,6 +9,7 @@
 </head>
 <body>
     <div class="box_start">
+        <h1>Diamond Lobby</h1>
         <p>Escolha seu apelido no cassino.</p>
         <input type="text" class="text_nick" placeholder="Nick Name">
         <button class="buttonInitial">INICIAR</button>    
@@ -35,10 +36,10 @@
         <section class="section_table">
             <div class="section_bank">
                 <div class="menu_bank">
-                    <div class="section_withdraw">
+                    <div class="section_withdraw active">
                         <ion-icon name="card-outline"></ion-icon><span>Saque</span>
                     </div>
-                    <div class="section_deposit active">
+                    <div class="section_deposit">
                         <ion-icon name="wallet-outline"></ion-icon><span>Depósito</span>
                     </div>
                     <div class="section_loan">
@@ -53,7 +54,19 @@
 
                     </div>
                     <div class="section_deposit_display" id="2_D">
-
+                        <div class="contain_deposit">
+                            <div class="deposit">
+                                <span class="no_money">Dinheiro Insuficiente!</span>
+                                <span>Quanto deseja depósitar?</span>
+                                <input class="input_deposit" placeholder="Valor" type="text">
+                                <input type="button" class="button" value="Depósitar">
+                            </div>
+                        </div>
+                        <div class="section_deposit_display_load">
+                            <h1>Depósito efetuado!</h1>
+                            <p></p>
+                            <div class="button">Continuar<ion-icon name="arrow-redo"></ion-icon></ion-icon></div>
+                        </div>
                     </div>
                     <div class="section_loan_display" id="3_D">
                         <div class="span_contain">
@@ -80,7 +93,7 @@
                         </div>
                     </div>  
                     <div class="section_history_display" id="4_D">
-
+                        <div class="history_clean"></ion-icon>Nada no histórico...</div>
                     </div>
                 </div>
             </div>

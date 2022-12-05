@@ -11,6 +11,52 @@ body{
     justify-content: center;
     align-items: center;
     background-color: #222;
+    color: rgb(62, 49, 255);
+    text-shadow: 0px 0px 10px black;
+    font-size: 19px;
+}
+input {
+    width: 300px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: rgba(63, 49, 255, 0.329);
+    border: 1px solid black;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}
+input:hover {
+    background-color: rgb(62, 49, 255);
+    box-shadow: 0px 5px 20px rgba(63, 49, 255, 0.712);
+}
+input:focus {
+    background-color: rgb(62, 49, 255);
+    box-shadow: 0px 5px 20px rgba(63, 49, 255, 0.712);
+}
+input::placeholder {
+    color: rgba(0, 0, 0, 0.329) ;
+    font-size: 18px;
+}
+.button {
+    width: 150px;
+    height: 50px;
+    background-color: rgb(45, 34, 199);
+    border-radius: 10px;
+    border: 1px solid black;
+    color: rgb(0, 0, 0);
+    text-shadow: 0px 0px 15px black;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 23px;
+    margin-top: 40px;
+    padding: 10px;
+}
+.button:hover {
+    background-color: rgb(62, 49, 255);
+    box-shadow: 0px 5px 20px rgba(63, 49, 255, 0.712);
 }
 .section_global {
     width: 100%;
@@ -25,6 +71,12 @@ body{
     align-items: center;
     flex-direction: column;
     margin-top: 200px;
+}
+.box_start h1 {
+    color: rgb(62, 49, 255); 
+    text-shadow: 0px 0px 10px black;
+    font-size: 50px;
+    margin-bottom: 100px;
 }
 .box_start p {
     color: rgb(202, 202, 202);
@@ -174,8 +226,8 @@ header {
     display: flex;
 }
 .menu_bank {
-    height: 900px;
     width: 350px;
+    height: 900px;
     border-right: 1px solid black;
     display: flex;
     flex-direction: column;
@@ -205,7 +257,7 @@ header {
 
 
 .section_cash_machine {
-    width: inherit;
+    width: 1000px;
     height: inherit;
 }
 
@@ -331,15 +383,127 @@ header {
     background-color: red;
     display: flex;
 }
+/* -----------Deposit Display---------------- */
 .section_deposit_display {
     width: inherit;
     height: inherit;
-    background-color: blue;
     display: none;
+    justify-content: center;
+    align-items: center;
 }
+.no_money {
+    display: none;
+    color: rgb(224, 1, 1);
+    background-color: rgb(66, 4, 4) ;
+    margin-top: -50px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid black;
+    cursor: pointer;
+    animation-name: noMoney;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes noMoney {
+    0% {background-color: rgb(66, 4, 4); color: rgb(224, 1, 1) ;}
+    25% {background-color: rgb(124, 7, 7); color: black;}
+    50% {background-color: rgb(66, 4, 4); color: rgb(224, 1, 1) ;}
+    75% {background-color: rgb(124, 7, 7); color: rgb(0, 0, 0);}
+    100% {background-color: rgb(66, 4, 4); color: rgb(224, 1, 1) ;}
+}
+.deposit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.deposit span {
+    margin-bottom: 20px;
+}
+.deposit .button {
+    font-size: 17px;
+    font-weight: 100;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.692);
+}
+
+.section_deposit_display_load {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.section_deposit_display_load h1 {
+    margin-bottom: 30px;
+}
+
+
+
+
+
+/* -----------History Display---------------- */
 .section_history_display {
     width: inherit;
-    height: inherit;
-    background-color: yellow;
     display: none;
+    flex-direction: column;
+    overflow: scroll;
+}
+.history_clean {
+    width: inherit;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(63, 49, 255, 0.24);
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.418);
+    cursor: pointer;
+    font-size: 50px;
+    font-weight: bold;
+}
+.history_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 120px;
+    padding: 30px 70px;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.left_side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon_transition{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 52px;
+    color: rgb(0, 112, 19);
+}
+.history_box:hover {
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+
+}
+.transition {
+    margin-left: 100px;
+    font-size: 25px;
+    color: rgb(62, 49, 255);
+    text-shadow: 0px 0px 10px black;
+}
+.money_transition {
+    font-size: 27px;
+    margin-left: 70px;
+    color: rgb(62, 49, 255);
+    text-shadow: 0px 0px 10px black;
+}
+.data_transition {
+    font-size: 20px;
+    color: rgb(62, 49, 255);
+    text-shadow: 0px 0px 10px black;
+    border: 1px solid rgba(3, 9, 99, 0.377);
+    background-color: rgba(17, 17, 17, 0.342);
+    padding: 2px 4px;
+    border-radius: 5px;
 }
