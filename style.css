@@ -213,6 +213,66 @@ header {
 }
 
 /* Table Game */
+.data_table {
+    margin-top: 50px;
+    width: 1350px;
+    height: 60px;
+    background-color: #111;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    align-items:center;
+    border: 1px solid rgba(63, 49, 255, 0.651) ;
+}
+.diamond_name {
+    width: 350px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid rgba(63, 49, 255, 0.651);
+    border: 1px solid rgba(63, 49, 255, 0.651) ;
+    cursor: pointer;
+}
+.Bank_Balance {
+    width: 350px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(63, 49, 255, 0.651) ;
+    cursor: pointer;
+}
+.Bank_Balance h1 {
+    font-size: 20px;
+}
+.Bank_Money {
+    width: 100px;
+    text-align: center;
+}
+.led_diamond {
+    width: 600px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.led_diamond p{
+    margin-left: 0%;
+    transition: 10s linear;
+}
+
+
+
+
+
+
+
+
+
 
 .section_bank {
     width: 1350px;
@@ -220,7 +280,6 @@ header {
     background-color: rgb(29, 29, 29);
     border: 1px solid black;
     border-radius: 5px;
-    margin-top: 70px;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.623);
     overflow: hidden;
     display: flex;
@@ -376,13 +435,43 @@ header {
     box-shadow: 0px 5px 20px rgba(63, 49, 255, 0.712);
 }
 
-/* TESTE */
+
+/* -----------Withdraw Display---------------- */
 .section_withdraw_display {
     width: inherit;
     height: inherit;
-    background-color: red;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+.section_withdraw_display .withdraw {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.withdraw span {
+    margin-bottom: 20px;
+}
+.section_withdraw_display .button{
+    font-size: 15px;
+}
+.section_withdraw_display_load {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.section_withdraw_display_load h1 {
+    margin-bottom: 20px;
+}
+.section_withdraw_display_load .button {
+    font-size: 23px;
+}
+
+
+
 /* -----------Deposit Display---------------- */
 .section_deposit_display {
     width: inherit;
@@ -421,7 +510,7 @@ header {
     margin-bottom: 20px;
 }
 .deposit .button {
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 100;
     text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.692);
 }
@@ -443,13 +532,26 @@ header {
 /* -----------History Display---------------- */
 .section_history_display {
     width: inherit;
+    height: 100%;
     display: none;
     flex-direction: column;
-    overflow: scroll;
+    overflow-y: auto;
+}
+.section_history_display::-webkit-scrollbar {
+    width: 15px;
+}
+.section_history_display::-webkit-scrollbar-track {
+    background-color: rgb(21, 19, 54);
+}
+.section_history_display::-webkit-scrollbar-thumb {
+    width: 10px;
+    background-color: rgb(15, 8, 109);
+    border: 3px solid rgb(21, 19, 54) ;
+    border-radius: 10px;
 }
 .history_clean {
     width: inherit;
-    height: 450px;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -506,4 +608,10 @@ header {
     background-color: rgba(17, 17, 17, 0.342);
     padding: 2px 4px;
     border-radius: 5px;
+}
+.left_side span {
+    width: 180px;
+}
+.left_side .money_transition {
+    text-align: center;
 }

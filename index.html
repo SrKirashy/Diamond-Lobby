@@ -33,6 +33,18 @@
             </div>
         </header>
         
+        <section class="data_table">
+            <div class="diamond_name">
+                <h1>Diamond Bank</h1>
+            </div>
+            <div class="Bank_Balance">
+                <h1>Banco: </h1>
+                <span class="Bank_Money"></span>
+            </div>
+            <div class="led_diamond">
+                <p>Seja Bem Vindo!</p>
+            </div>
+        </section>
         <section class="section_table">
             <div class="section_bank">
                 <div class="menu_bank">
@@ -51,7 +63,17 @@
                 </div>
                 <div class="section_cash_machine">
                     <div class="section_withdraw_display" id="1_D">
-
+                        <div class="withdraw">
+                                <span class="no_money">Você não possui esse dinheiro!</span>
+                                <span>Quanto deseja sacar?</span>
+                                <input class="input_withdraw" placeholder="Valor" type="text">
+                                <input type="button" class="button" value="Confirmar Saque">
+                        </div>
+                        <div class="section_withdraw_display_load">
+                            <h1>Saque efetuado!</h1>
+                            <p></p>
+                            <div class="button">Continuar<ion-icon name="arrow-redo"></ion-icon></ion-icon></div>
+                        </div>
                     </div>
                     <div class="section_deposit_display" id="2_D">
                         <div class="contain_deposit">
@@ -59,7 +81,7 @@
                                 <span class="no_money">Dinheiro Insuficiente!</span>
                                 <span>Quanto deseja depósitar?</span>
                                 <input class="input_deposit" placeholder="Valor" type="text">
-                                <input type="button" class="button" value="Depósitar">
+                                <input type="button" class="button" value="Confirmar Depósito">
                             </div>
                         </div>
                         <div class="section_deposit_display_load">
