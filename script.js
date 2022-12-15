@@ -15,6 +15,13 @@ let dateOn = day+'/'+moth+'/'+year;
 document.querySelector('.buttonInitial').addEventListener('click', (e) => {
     initiatingData();
 })
+// Menu Home -------------------->  Menu Home --------------------> Menu Home --------------------> 
+document.querySelector('.game_controler').addEventListener('click', ()=> {
+   initiatingGame();
+})
+document.querySelector('.bank_wallet').addEventListener('click', ()=> {
+    initiatingBank();
+ })
 
 // MENU BANK ----------------->  MENU BANK -----------------> MENU BANK ----------------->
 document.querySelector('.section_withdraw').addEventListener('click', e => clickMenuBank(e));
@@ -25,8 +32,6 @@ document.querySelector('.section_history').addEventListener('click', e => clickM
 document.querySelector('.withdraw .button').addEventListener('click', (e)=> {
     buttonWithdraw(e);
 })
-
-
 
 //Deposit -----------------> Deposit -----------------> Deposit ----------------->
 document.querySelector('.deposit .button').addEventListener('click',()=> {
@@ -42,6 +47,17 @@ document.querySelector('.section_loan_display button').addEventListener('click',
 
 
 // Functions -----------------
+function initiatingGame() {
+    document.querySelector('.bank_lobby').style.display = 'none';
+    document.querySelector('.game_lobby').style.display = 'flex';
+}
+function initiatingBank(){
+    document.querySelector('.game_lobby').style.display = 'none';
+    document.querySelector('.bank_lobby').style.display = 'flex';
+}
+
+
+
 function updateMoney () {
     document.querySelector('.money').innerHTML = Number(money).toFixed(2);
     document.querySelector('.Bank_Money').innerHTML = Number(bank).toFixed(2);
@@ -183,7 +199,7 @@ function resetAll() {
 setInterval(ledDiamond, 10500);
 function ledDiamond() {
     document.querySelector('.led_diamond p').style.transition = '10s linear';
-    document.querySelector('.led_diamond p').innerHTML = 'Faça seu empréstimo aqui no Diamond Lobby, o banco que se importa com seus clientes, venha fazer parte da família diamond! #DiamondLobbyIsTheBestBank';
+    document.querySelector('.led_diamond p').innerHTML = 'Faça seu empréstimo aqui no Diamond Bank, o banco que se importa com seus clientes, venha fazer parte da família diamond! #DiamondBankIsTheBestBank';
     document.querySelector('.led_diamond p').style.marginLeft = '-310%';
     setTimeout(returnMargin, 10000);
 }

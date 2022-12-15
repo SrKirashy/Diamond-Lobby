@@ -155,7 +155,7 @@ header {
     text-shadow: -2px 0px 15px  rgb(0, 0, 0);;
 }
 .header_center {
-    width: 600px;
+    width: 800px;
     height: 75px;
     display: flex;
     justify-content: flex-end;
@@ -166,6 +166,7 @@ header {
     margin-top: 10px;
     color: rgb(62, 49, 255);
     font-size: 40px;
+    margin-right: 50px;
     cursor: pointer;
     transition: 0.1s;
 }
@@ -211,6 +212,37 @@ header {
     margin: 15px;
     text-shadow: 0px 0px 15px rgb(28, 141, 13);
 }
+.bank_lobby {
+    display: flex;
+    flex-direction: column;
+}
+/* Game Lobby ---------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Table Game */
 .data_table {

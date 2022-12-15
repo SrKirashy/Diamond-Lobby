@@ -22,7 +22,8 @@
                     <p class="nick_name"></p>
                 </div>
                 <div class="header_center">
-                    <span><ion-icon class="ion-icon_header" name="wallet-outline"></ion-icon></span>
+                    <span class="game_controler"><ion-icon name="game-controller"></ion-icon></span>
+                    <span class="bank_wallet"><ion-icon class="ion-icon_header" name="wallet-outline"></ion-icon></span>
                 </div>
                 <div class="header_right">
                     <p>R$</p>
@@ -32,94 +33,99 @@
                 </div>
             </div>
         </header>
-        
-        <section class="data_table">
-            <div class="diamond_name">
-                <h1>Diamond Bank</h1>
-            </div>
-            <div class="Bank_Balance">
-                <h1>Banco: </h1>
-                <span class="Bank_Money"></span>
-            </div>
-            <div class="led_diamond">
-                <p>Seja Bem Vindo!</p>
-            </div>
+        <section class="game_lobby">
+            
         </section>
-        <section class="section_table">
-            <div class="section_bank">
-                <div class="menu_bank">
-                    <div class="section_withdraw active">
-                        <ion-icon name="card-outline"></ion-icon><span>Saque</span>
-                    </div>
-                    <div class="section_deposit">
-                        <ion-icon name="wallet-outline"></ion-icon><span>Depósito</span>
-                    </div>
-                    <div class="section_loan">
-                        <ion-icon name="cash-outline"></ion-icon><span>Empréstimo</span>
-                    </div>
-                    <div class="section_history">
-                        <ion-icon name="swap-vertical-outline"></ion-icon></ion-icon><span>Histórico</span>
-                    </div>
+        <section class="bank_lobby">
+            <section class="data_table">
+                <div class="diamond_name">
+                    <h1>Diamond Bank</h1>
                 </div>
-                <div class="section_cash_machine">
-                    <div class="section_withdraw_display" id="1_D">
-                        <div class="withdraw">
-                                <span class="no_money">Você não possui esse dinheiro!</span>
-                                <span>Quanto deseja sacar?</span>
-                                <input class="input_withdraw" placeholder="Valor" type="text">
-                                <input type="button" class="button" value="Confirmar Saque">
+                <div class="Bank_Balance">
+                    <h1>Banco: </h1>
+                    <span class="Bank_Money"></span>
+                </div>
+                <div class="led_diamond">
+                    <p>Seja Bem Vindo!</p>
+                </div>
+            </section>
+            <section class="section_table">
+                <div class="section_bank">
+                    <div class="menu_bank">
+                        <div class="section_withdraw active">
+                            <ion-icon name="card-outline"></ion-icon><span>Saque</span>
                         </div>
-                        <div class="section_withdraw_display_load">
-                            <h1>Saque efetuado!</h1>
-                            <p></p>
-                            <div class="button">Continuar<ion-icon name="arrow-redo"></ion-icon></ion-icon></div>
+                        <div class="section_deposit">
+                            <ion-icon name="wallet-outline"></ion-icon><span>Depósito</span>
                         </div>
-                    </div>
-                    <div class="section_deposit_display" id="2_D">
-                        <div class="contain_deposit">
-                            <div class="deposit">
-                                <span class="no_money">Dinheiro Insuficiente!</span>
-                                <span>Quanto deseja depósitar?</span>
-                                <input class="input_deposit" placeholder="Valor" type="text">
-                                <input type="button" class="button" value="Confirmar Depósito">
-                            </div>
+                        <div class="section_loan">
+                            <ion-icon name="cash-outline"></ion-icon><span>Empréstimo</span>
                         </div>
-                        <div class="section_deposit_display_load">
-                            <h1>Depósito efetuado!</h1>
-                            <p></p>
-                            <div class="button">Continuar<ion-icon name="arrow-redo"></ion-icon></ion-icon></div>
+                        <div class="section_history">
+                            <ion-icon name="swap-vertical-outline"></ion-icon></ion-icon><span>Histórico</span>
                         </div>
                     </div>
-                    <div class="section_loan_display" id="3_D">
-                        <div class="span_contain">
-                            <div class="span_box">
-                                <span>Nome do Cliente:</span>
-                                <input class="input_1" placeholder="Nome" type="text">
+                    <div class="section_cash_machine">
+                        <div class="section_withdraw_display" id="1_D">
+                            <div class="withdraw">
+                                    <span class="no_money">Você não possui esse dinheiro!</span>
+                                    <span>Quanto deseja sacar?</span>
+                                    <input class="input_withdraw" placeholder="Valor" type="text">
+                                    <input type="button" class="button" value="Confirmar Saque">
                             </div>
-                            <div class="span_box">
-                                <span>Valor do empréstimo:</span>
-                                <input class="input_2"placeholder="Valor" type="text">
+                            <div class="section_withdraw_display_load">
+                                <h1>Saque efetuado!</h1>
+                                <p></p>
+                                <div class="button">Continuar<ion-icon name="arrow-redo"></ion-icon></ion-icon></div>
                             </div>
-                            <div class="span_box">
-                                <span>Motivo do empréstimo:</span>
-                                <input class="input_3"type="text">
+                        </div>
+                        <div class="section_deposit_display" id="2_D">
+                            <div class="contain_deposit">
+                                <div class="deposit">
+                                    <span class="no_money">Dinheiro Insuficiente!</span>
+                                    <span>Quanto deseja depósitar?</span>
+                                    <input class="input_deposit" placeholder="Valor" type="text">
+                                    <input type="button" class="button" value="Confirmar Depósito">
+                                </div>
+                            </div>
+                            <div class="section_deposit_display_load">
+                                <h1>Depósito efetuado!</h1>
+                                <p></p>
+                                <div class="button">Continuar<ion-icon name="arrow-redo"></ion-icon></ion-icon></div>
+                            </div>
+                        </div>
+                        <div class="section_loan_display" id="3_D">
+                            <div class="span_contain">
+                                <div class="span_box">
+                                    <span>Nome do Cliente:</span>
+                                    <input class="input_1" placeholder="Nome" type="text">
+                                </div>
+                                <div class="span_box">
+                                    <span>Valor do empréstimo:</span>
+                                    <input class="input_2"placeholder="Valor" type="text">
+                                </div>
+                                <div class="span_box">
+                                    <span>Motivo do empréstimo:</span>
+                                    <input class="input_3"type="text">
+                                </div>
+        
+                                <button>Efetuar Empréstimo</button>
                             </div>
     
-                            <button>Efetuar Empréstimo</button>
+                            <div class="section_loan_display_load">
+                                <h1>Emprestimo efetuado!</h1>
+                                <p></p>
+                                <div class="button">Continuar<ion-icon name="arrow-redo"></ion-icon></ion-icon></div>
+                            </div>
+                        </div>  
+                        <div class="section_history_display" id="4_D">
+                            <div class="history_clean"></ion-icon>Nada no histórico...</div>
                         </div>
-
-                        <div class="section_loan_display_load">
-                            <h1>Emprestimo efetuado!</h1>
-                            <p></p>
-                            <div class="button">Continuar<ion-icon name="arrow-redo"></ion-icon></ion-icon></div>
-                        </div>
-                    </div>  
-                    <div class="section_history_display" id="4_D">
-                        <div class="history_clean"></ion-icon>Nada no histórico...</div>
                     </div>
                 </div>
-            </div>
+            </section>
         </section>
+        
     </div>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
